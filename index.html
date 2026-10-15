@@ -1,0 +1,802 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mesud Amin — Full-Stack Developer & Software Engineer</title>
+  
+  <!-- SEO & Social Meta Tags -->
+  <meta name="description" content="Mesud Amin is a full-stack developer crafting responsive websites and modern web applications with clean code, architectural discipline, and user-centered design.">
+  <meta name="author" content="Mesud Amin">
+  <meta name="theme-color" content="#fafaf7">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Mesud Amin — Full-Stack Developer & Software Engineer">
+  <meta property="og:description" content="Crafting responsive websites and modern full-stack web applications with clean code and architectural discipline.">
+  <meta property="og:image" content="assets/images/mesud-portrait.jpg">
+
+  <!-- High-Speed DNS Prefetch & Preconnect for Typography -->
+  <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+  <link rel="dns-prefetch" href="https://fonts.gstatic.com">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600;700&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet">
+  
+  <!-- Inline SVG Brand Favicon (Instant Zero-Request) -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%23fafaf7'/%3E%3Crect x='8' y='8' width='16' height='16' fill='%23c3f266' stroke='%23171717' stroke-width='2'/%3E%3C/svg%3E">
+
+  <!-- Material Symbols Outlined Icons -->
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet">
+
+  <!-- Stylesheet (Pure Vanilla CSS) -->
+  <link rel="stylesheet" href="css/styles.css">
+
+  <!-- Vanilla JavaScript Logic -->
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+
+  <!-- ========================================================================
+       01. FIXED HEADER & NAVIGATION
+       👉 Edit brand name, navigation links, and availability status here
+       ======================================================================== -->
+  <header class="site-header" id="top-header">
+    <div class="container nav-container">
+      
+      <!-- Brand Logo & Live Availability Indicator -->
+      <div class="brand-wrapper">
+        <a href="#hero" class="brand-link" aria-label="Return to top">
+          <span class="brand-mark" aria-hidden="true"></span>
+          <span class="brand-name">Mesud Amin</span>
+        </a>
+        <div class="nav-status-badge" role="status" aria-label="Availability Status">
+          <span class="pulse-dot" aria-hidden="true"></span>
+          <span class="label-caps nav-status-text">Available for freelance &amp; full-time</span>
+        </div>
+      </div>
+
+      <!-- Desktop Navigation Menu -->
+      <nav class="nav-menu" aria-label="Main Navigation">
+        <a href="#hero" class="nav-link active" aria-current="page">Home</a>
+        <a href="#work" class="nav-link">Projects</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#process" class="nav-link">Process</a>
+        <a href="#services" class="nav-link">Services</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+
+      <!-- Action Button & Mobile Toggle -->
+      <div class="nav-actions">
+        <a href="#contact" class="btn btn-accent" id="nav-cta-btn">Let's Talk</a>
+        <div class="user-avatar-badge" title="Mesud Amin" aria-hidden="true">
+          <span class="material-symbols-outlined">person</span>
+        </div>
+        <button type="button" class="mobile-nav-toggle" id="mobile-nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="mobile-menu-drawer">
+          <span class="material-symbols-outlined">menu</span>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- Mobile Drawer & Backdrop Overlay -->
+  <div class="mobile-menu-overlay" id="mobile-menu-overlay"></div>
+  <aside class="mobile-menu-drawer" id="mobile-menu-drawer" aria-label="Mobile Navigation">
+    <div class="mobile-drawer-header">
+      <span class="pulse-dot"></span>
+      <span class="label-caps" style="color:var(--text-muted);">Available for freelance &amp; full-time</span>
+    </div>
+    <ul class="mobile-nav-list">
+      <li><a href="#hero" class="mobile-link active">Home</a></li>
+      <li><a href="#work" class="mobile-link">Projects</a></li>
+      <li><a href="#about" class="mobile-link">About</a></li>
+      <li><a href="#skills" class="mobile-link">Skills</a></li>
+      <li><a href="#process" class="mobile-link">Process</a></li>
+      <li><a href="#services" class="mobile-link">Services</a></li>
+      <li><a href="#contact" class="mobile-link">Contact</a></li>
+    </ul>
+    <div class="mobile-drawer-actions">
+      <a href="#contact" class="btn btn-accent mobile-btn-full">Let's Talk</a>
+      <button type="button" class="btn btn-outline mobile-btn-full" data-copy-text="contact@mesudamin.dev">
+        <span>Copy Email</span>
+        <span class="material-symbols-outlined" style="font-size:16px;">content_copy</span>
+      </button>
+    </div>
+  </aside>
+
+  <!-- ========================================================================
+       MAIN CONTENT CONTAINER
+       ======================================================================== -->
+  <main id="main-content">
+
+    <!-- ======================================================================
+         02. HERO SECTION
+         👉 Edit headline, intro paragraph, metric counters, and HUD card here
+         ====================================================================== -->
+    <section class="hero-section" id="hero">
+      <div class="container">
+        <div class="hero-grid">
+          
+          <!-- Left Column: Intro Copy & Actions -->
+          <div class="hero-content">
+            
+            <div class="hero-pill-badge">
+              <span class="pulse-dot" aria-hidden="true"></span>
+              <span class="label-caps">Available for freelance &amp; full-time roles</span>
+            </div>
+            
+            <h1 class="hero-headline">
+              I build thoughtful digital experiences.
+            </h1>
+            
+            <p class="hero-subhead">
+              I'm Mesud Amin, a developer crafting responsive websites and modern full-stack web applications with clean code, architectural discipline, and user-centered design.
+            </p>
+
+            <div class="hero-cta-group">
+              <a href="#work" class="btn btn-primary" id="hero-view-work-btn">
+                <span>View Selected Work</span>
+                <span class="material-symbols-outlined" style="font-size: 18px;" aria-hidden="true">arrow_downward</span>
+              </a>
+              <a href="#contact" class="btn btn-accent btn-accent-lg" id="hero-contact-btn">
+                <span>Let's Talk</span>
+                <span class="material-symbols-outlined" style="font-size: 18px;" aria-hidden="true">mail</span>
+              </a>
+            </div>
+
+            <!-- Key Metrics Row -->
+            <div class="hero-metrics">
+              <div>
+                <div class="metric-value">3+ Years</div>
+                <div class="metric-label">Production Building</div>
+              </div>
+              <div>
+                <div class="metric-value">100%</div>
+                <div class="metric-label">Responsive &amp; Accessible</div>
+              </div>
+              <div>
+                <div class="metric-value">&lt; 1.2s</div>
+                <div class="metric-label">LCP Performance Focus</div>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Right Column: HUD Inspector Card -->
+          <div class="hero-hud-col">
+            <div class="inspector-card">
+              
+              <!-- Inspector Header -->
+              <div class="inspector-header">
+                <div class="window-dots" aria-hidden="true">
+                  <span class="window-dot dot-red"></span>
+                  <span class="window-dot dot-yellow"></span>
+                  <span class="window-dot dot-green"></span>
+                </div>
+                <span class="inspector-domain">mesudamin.dev</span>
+                <span class="status-active-badge">ACTIVE</span>
+              </div>
+
+              <!-- Inspector Body Modules -->
+              <div class="inspector-content">
+                <div class="inspector-module">
+                  <span class="label-caps" style="color: var(--text-muted); display: block; margin-bottom: 0.25rem;">Core Expertise</span>
+                  <h3 class="inspector-module-title">Full-Stack Architecture &amp; Fluid UI</h3>
+                  <p class="inspector-module-desc">React, Node.js, Express, MySQL, Tailwind CSS, REST APIs</p>
+                </div>
+
+                <div class="inspector-subgrid">
+                  <div class="inspector-module">
+                    <span class="label-caps inspector-subgrid-label">Philosophy</span>
+                    <p class="inspector-subgrid-val">Restraint, semantic clarity, speed.</p>
+                  </div>
+                  <div class="inspector-module">
+                    <span class="label-caps inspector-subgrid-label">Location</span>
+                    <p class="inspector-subgrid-val">Remote / Global Availability</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Inspector Footer Score -->
+              <div class="inspector-footer">
+                <span>Lighthouse Performance</span>
+                <span class="inspector-score">99 / 100</span>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ======================================================================
+         03. SECTION 01 // SELECTED WORK (PROJECT SHOWCASE)
+         👉 Edit or add featured projects here (and in js/main.js for the modal)
+         ====================================================================== -->
+    <section class="section-work" id="work">
+      <div class="container">
+        
+        <!-- Section Header -->
+        <div class="section-header">
+          <div>
+            <span class="section-tag">01 // SELECTED WORK</span>
+            <h2 class="section-title">Featured Projects</h2>
+          </div>
+          <p class="section-desc">
+            Direct proof of technical craftsmanship: production web applications and modern responsive interfaces.
+          </p>
+        </div>
+
+        <!-- Project Cards List -->
+        <div class="projects-list">
+          
+          <!-- Project 1: Aurora Task Engine -->
+          <article class="project-card" id="project-aurora">
+            <div class="project-card-grid">
+              
+              <!-- Browser Mockup Viewport -->
+              <div class="browser-frame">
+                <div class="browser-bar">
+                  <span class="browser-url">https://aurora.mesudamin.dev</span>
+                  <span class="material-symbols-outlined" style="font-size: 16px; color: var(--text-muted);" aria-hidden="true">lock</span>
+                </div>
+                <div class="browser-screen">
+                  <img src="assets/images/aurora-preview.jpg" alt="Minimalist task management kanban web application called Aurora" width="512" height="279" loading="lazy" decoding="async">
+                </div>
+              </div>
+
+              <!-- Project Metadata & Description -->
+              <div class="project-info">
+                <div>
+                  <div class="project-meta-badges">
+                    <span class="badge-lime">Full-Stack App</span>
+                    <span class="label-caps" style="color: var(--text-muted);">React + Express + MySQL</span>
+                  </div>
+                  <h3 class="project-card-title">Aurora Task Engine</h3>
+                  <p class="project-card-desc">
+                    Intuitive project tracking platform with real-time state synchronization, custom sprint pipelines, and relational database persistence built to simplify engineering backlogs.
+                  </p>
+                  <div class="tech-chips" aria-label="Technologies used">
+                    <span class="chip">React</span>
+                    <span class="chip">Node.js</span>
+                    <span class="chip">MySQL</span>
+                    <span class="chip">Tailwind CSS</span>
+                  </div>
+                </div>
+                
+                <div class="project-actions">
+                  <button type="button" class="btn btn-primary" data-project-trigger="aurora" aria-label="View Aurora Task Engine live demo and architecture specs">
+                    <span>Live Demo</span>
+                    <span class="material-symbols-outlined" style="font-size: 16px;" aria-hidden="true">open_in_new</span>
+                  </button>
+                  <a href="https://github.com/mesudamin" target="_blank" rel="noopener noreferrer" class="btn btn-outline" aria-label="View Aurora Task Engine source code on GitHub">
+                    <span>Source Code</span>
+                    <span class="material-symbols-outlined" style="font-size: 16px;" aria-hidden="true">code</span>
+                  </a>
+                </div>
+              </div>
+
+            </div>
+          </article>
+
+          <!-- Project 2: Verve Studio Agency -->
+          <article class="project-card" id="project-verve">
+            <div class="project-card-grid">
+              
+              <!-- Browser Mockup Viewport -->
+              <div class="browser-frame">
+                <div class="browser-bar">
+                  <span class="browser-url">https://vervestudio.agency</span>
+                  <span class="material-symbols-outlined" style="font-size: 16px; color: var(--text-muted);" aria-hidden="true">lock</span>
+                </div>
+                <div class="browser-screen">
+                  <img src="assets/images/verve-preview.jpg" alt="Editorial business website design for creative studio consultancy called Verve Studio" width="512" height="318" loading="lazy" decoding="async">
+                </div>
+              </div>
+
+              <!-- Project Metadata & Description -->
+              <div class="project-info">
+                <div>
+                  <div class="project-meta-badges">
+                    <span class="badge-lime">High-Performance Web</span>
+                    <span class="label-caps" style="color: var(--text-muted);">React + CSS Grid + UX</span>
+                  </div>
+                  <h3 class="project-card-title">Verve Studio Agency</h3>
+                  <p class="project-card-desc">
+                    Editorial landing experience with fluid responsive layouts, micro-interactions, accessible typography, and fast cross-device rendering designed for creative brands.
+                  </p>
+                  <div class="tech-chips" aria-label="Technologies used">
+                    <span class="chip">React</span>
+                    <span class="chip">Tailwind CSS</span>
+                    <span class="chip">Responsive Design</span>
+                    <span class="chip">WCAG 2.1</span>
+                  </div>
+                </div>
+                
+                <div class="project-actions">
+                  <button type="button" class="btn btn-primary" data-project-trigger="verve" aria-label="View Verve Studio Agency live demo and design architecture">
+                    <span>Live Demo</span>
+                    <span class="material-symbols-outlined" style="font-size: 16px;" aria-hidden="true">open_in_new</span>
+                  </button>
+                  <a href="https://github.com/mesudamin" target="_blank" rel="noopener noreferrer" class="btn btn-outline" aria-label="View Verve Studio Agency source code on GitHub">
+                    <span>Source Code</span>
+                    <span class="material-symbols-outlined" style="font-size: 16px;" aria-hidden="true">code</span>
+                  </a>
+                </div>
+              </div>
+
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ======================================================================
+         04. SECTION 02 // ABOUT & FOCUS
+         👉 Edit portrait photo, bio statement, stack chips, and social URLs here
+         ====================================================================== -->
+    <section class="section-about" id="about">
+      <div class="container">
+        <div class="about-grid">
+          
+          <!-- Left Column: Portrait -->
+          <div>
+            <div class="portrait-container">
+              <img src="assets/images/mesud-portrait.jpg" alt="Mesud Amin, Software Engineer" width="512" height="279" loading="lazy" decoding="async" class="portrait-img">
+              <div class="portrait-pill">
+                <span class="pulse-dot" aria-hidden="true"></span>
+                <span class="label-caps" style="color: var(--text-primary);">Mesud Amin — Software Engineer</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Column: Bio & Technical Stack -->
+          <div>
+            <span class="section-tag">02 // ABOUT &amp; FOCUS</span>
+            <h2 class="section-title" style="margin-bottom: var(--space-md);">Clean architecture, reliable execution.</h2>
+            
+            <p class="about-bio-p1">
+              I view software development as an architectural craft. Over the past three years, I have specialized in turning ambitious ideas into fast, maintainable websites and responsive web apps that honor both user attention and business outcomes.
+            </p>
+            
+            <p class="about-bio-p2">
+              No unnecessary complexity or bloated libraries—just clean semantic code, modular components, intuitive interaction models, and resilient backend services.
+            </p>
+
+            <!-- Tech Stack Chips Box -->
+            <div class="about-stack-box">
+              <span class="label-caps" style="color: var(--text-muted); display: block; margin-bottom: var(--space-xs);">Tech Stack &amp; Tools</span>
+              <div class="tech-chips" style="margin-bottom: 0;">
+                <span class="chip-white">JavaScript (ES6+)</span>
+                <span class="chip-white">React</span>
+                <span class="chip-white">Node.js</span>
+                <span class="chip-white">Express</span>
+                <span class="chip-white">MySQL</span>
+                <span class="chip-white">Tailwind CSS</span>
+                <span class="chip-white">HTML5 / CSS3</span>
+                <span class="chip-white">Git &amp; GitHub</span>
+                <span class="chip-white">REST APIs</span>
+              </div>
+            </div>
+
+            <!-- Social Links Row -->
+            <div class="about-links-row">
+              <a href="https://github.com/mesudamin" target="_blank" rel="noopener noreferrer" class="social-link">
+                <span>GitHub Profile</span>
+                <span class="material-symbols-outlined" style="font-size: 16px;" aria-hidden="true">north_east</span>
+              </a>
+              <span class="dot-separator" aria-hidden="true">•</span>
+              <a href="https://linkedin.com/in/mesudamin" target="_blank" rel="noopener noreferrer" class="social-link">
+                <span>LinkedIn</span>
+                <span class="material-symbols-outlined" style="font-size: 16px;" aria-hidden="true">north_east</span>
+              </a>
+              <span class="dot-separator" aria-hidden="true">•</span>
+              <a href="mailto:contact@mesudamin.dev" class="social-link" data-copy-text="contact@mesudamin.dev" title="Click to copy email">
+                <span>contact@mesudamin.dev</span>
+              </a>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ======================================================================
+         05. SECTION 03 // TOOLKIT & CAPABILITIES (SKILLS)
+         👉 Edit skill categories and descriptions here
+         ====================================================================== -->
+    <section class="section-skills" id="skills">
+      <div class="container">
+        
+        <div class="section-header">
+          <div>
+            <span class="section-tag">03 // TOOLKIT &amp; CAPABILITIES</span>
+            <h2 class="section-title">Engineering Stack &amp; Skills</h2>
+          </div>
+          <p class="section-desc">
+            Specialized tools, frameworks, and architectural competencies deployed across the full modern web development lifecycle.
+          </p>
+        </div>
+
+        <div class="skills-grid">
+          
+          <!-- Skill Card 1 -->
+          <div class="skill-card">
+            <div>
+              <div class="skill-icon-box" aria-hidden="true">
+                <span class="material-symbols-outlined">code</span>
+              </div>
+              <h3 class="skill-title">Frontend Architecture</h3>
+              <p class="skill-desc">
+                Crafting robust client-side applications with React, modern ES6+ JavaScript, responsive layouts, CSS Grid, and reusable component libraries.
+              </p>
+            </div>
+            <div class="skill-footer-badge">
+              <span>UI &amp; Interaction</span>
+              <span class="label-caps">PROD READY</span>
+            </div>
+          </div>
+
+          <!-- Skill Card 2 -->
+          <div class="skill-card">
+            <div>
+              <div class="skill-icon-box" aria-hidden="true">
+                <span class="material-symbols-outlined">dns</span>
+              </div>
+              <h3 class="skill-title">Backend &amp; REST APIs</h3>
+              <p class="skill-desc">
+                Building resilient server foundations using Node.js and Express, implementing RESTful endpoints, JWT authentication, and structured error handling.
+              </p>
+            </div>
+            <div class="skill-footer-badge">
+              <span>Server Logic</span>
+              <span class="label-caps">RESTFUL</span>
+            </div>
+          </div>
+
+          <!-- Skill Card 3 -->
+          <div class="skill-card">
+            <div>
+              <div class="skill-icon-box" aria-hidden="true">
+                <span class="material-symbols-outlined">database</span>
+              </div>
+              <h3 class="skill-title">Database Design</h3>
+              <p class="skill-desc">
+                Architecting relational databases with MySQL, normalized table structures, foreign key constraints, indexing strategies, and optimized query execution.
+              </p>
+            </div>
+            <div class="skill-footer-badge">
+              <span>Persistence</span>
+              <span class="label-caps">ACID</span>
+            </div>
+          </div>
+
+          <!-- Skill Card 4 -->
+          <div class="skill-card">
+            <div>
+              <div class="skill-icon-box" aria-hidden="true">
+                <span class="material-symbols-outlined">speed</span>
+              </div>
+              <h3 class="skill-title">Performance &amp; A11y</h3>
+              <p class="skill-desc">
+                Engineering for 99+ Lighthouse scores, sub-second LCP, zero layout shifts (CLS), WCAG 2.1 AA accessibility, and cross-browser resilience.
+              </p>
+            </div>
+            <div class="skill-footer-badge">
+              <span>Optimization</span>
+              <span class="label-caps">&lt; 1.2s LCP</span>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ======================================================================
+         06. SECTION 04 // DEVELOPMENT PROCESS
+         👉 Edit the 4-step engineering methodology here
+         ====================================================================== -->
+    <section class="section-process" id="process">
+      <div class="container">
+        
+        <div class="section-header">
+          <div>
+            <span class="section-tag">04 // PROCESS &amp; DISCIPLINE</span>
+            <h2 class="section-title">How I Build Digital Products</h2>
+          </div>
+          <p class="section-desc">
+            A disciplined 4-stage engineering lifecycle focused on predictable delivery, maintainability, and architectural rigor.
+          </p>
+        </div>
+
+        <div class="process-grid">
+          
+          <div class="process-step-card">
+            <div class="step-number">01</div>
+            <h3 class="step-name">Discovery &amp; Specs</h3>
+            <p class="step-desc">
+              Thorough audit of core requirements, data models, interaction specs, and establishing strict performance and accessibility budgets.
+            </p>
+          </div>
+
+          <div class="process-step-card">
+            <div class="step-number">02</div>
+            <h3 class="step-name">Design &amp; Architecture</h3>
+            <p class="step-desc">
+              Establishing reusable design tokens, responsive Swiss grid systems, semantic component hierarchies, and resilient API contracts.
+            </p>
+          </div>
+
+          <div class="process-step-card">
+            <div class="step-number">03</div>
+            <h3 class="step-name">Implementation</h3>
+            <p class="step-desc">
+              Writing clean, modular vanilla JavaScript and component code, wiring backend routes, optimizing queries, and testing edge states.
+            </p>
+          </div>
+
+          <div class="process-step-card">
+            <div class="step-number">04</div>
+            <h3 class="step-name">Audit &amp; Deployment</h3>
+            <p class="step-desc">
+              Running comprehensive Lighthouse audits, cross-device and mobile viewport testing, build minification, and production deployment.
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ======================================================================
+         07. SECTION 05 // SERVICES
+         👉 Edit your service offerings and value propositions here
+         ====================================================================== -->
+    <section class="section-services" id="services">
+      <div class="container">
+        
+        <div class="section-header">
+          <div>
+            <span class="section-tag">05 // SERVICES</span>
+            <h2 class="section-title">How I Can Add Value</h2>
+          </div>
+          <p class="section-desc">
+            Dependable execution for founders, agencies, and engineering teams.
+          </p>
+        </div>
+
+        <div class="services-grid">
+          
+          <div class="service-card">
+            <div class="service-icon-box" aria-hidden="true">
+              <span class="material-symbols-outlined">smartphone</span>
+            </div>
+            <h3 class="service-card-title">Responsive Websites</h3>
+            <p class="service-card-desc">
+              Fast, mobile-first websites engineered with clean semantic markup, fluid typography, and sub-second load times.
+            </p>
+          </div>
+
+          <div class="service-card">
+            <div class="service-icon-box" aria-hidden="true">
+              <span class="material-symbols-outlined">palette</span>
+            </div>
+            <h3 class="service-card-title">Frontend Implementation</h3>
+            <p class="service-card-desc">
+              Translating Figma and visual specs into pixel-precise, accessible, and maintainable React and CSS codebases.
+            </p>
+          </div>
+
+          <div class="service-card">
+            <div class="service-icon-box" aria-hidden="true">
+              <span class="material-symbols-outlined">dashboard_customize</span>
+            </div>
+            <h3 class="service-card-title">Web Application MVPs</h3>
+            <p class="service-card-desc">
+              Prototyping and building functional full-stack MVPs with REST APIs, authentication flows, and relational databases.
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ======================================================================
+         08. SECTION 06 // CONTACT & FORM
+         👉 Edit direct contact info and form settings here
+         ====================================================================== -->
+    <section class="section-contact" id="contact">
+      <div class="container">
+        <div class="contact-grid">
+          
+          <!-- Left Column: Direct Info -->
+          <div class="contact-info-col">
+            <span class="section-tag">06 // CONTACT</span>
+            <h2 class="contact-headline">Have a project in mind?</h2>
+            
+            <p class="contact-subhead">
+              I'm available for freelance projects, contract engagements, and engineering roles. Reach out directly or send a quick note.
+            </p>
+
+            <a href="mailto:contact@mesudamin.dev" class="email-direct-box" title="Click to email Mesud Amin">
+              <div class="email-icon-box" aria-hidden="true">
+                <span class="material-symbols-outlined">mail</span>
+              </div>
+              <div>
+                <span class="email-direct-label">EMAIL ME DIRECTLY</span>
+                <span class="email-direct-address">contact@mesudamin.dev</span>
+              </div>
+            </a>
+
+            <div class="response-status-row">
+              <span class="pulse-dot" aria-hidden="true"></span>
+              <span>Response turnaround: &lt; 24 hours</span>
+            </div>
+          </div>
+
+          <!-- Right Column: Contact Form -->
+          <div>
+            <div class="contact-form-card">
+              <form class="contact-form" id="portfolio-contact-form" novalidate>
+                
+                <div class="form-group">
+                  <label class="form-label" for="contact-email">Your Email *</label>
+                  <input type="email" id="contact-email" name="email" class="form-input" placeholder="name@company.com" required autocomplete="email">
+                </div>
+
+                <div class="form-group">
+                  <label class="form-label" for="contact-message">Project or Message *</label>
+                  <textarea id="contact-message" name="message" class="form-textarea" rows="4" placeholder="Brief description of your project or role..." required></textarea>
+                </div>
+
+                <div class="form-footer">
+                  <span class="form-confidential-note">Strictly confidential.</span>
+                  <button type="submit" class="btn btn-primary" id="submit-contact-btn">
+                    <span>Send Message</span>
+                    <span class="material-symbols-outlined" style="font-size: 16px;" aria-hidden="true">arrow_forward</span>
+                  </button>
+                </div>
+
+                <!-- Live Client-Side Feedback -->
+                <div class="form-feedback" id="form-feedback" role="alert"></div>
+
+              </form>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+
+  <!-- ========================================================================
+       09. SECTION 07 // FOOTER
+       👉 Edit closing statement, directory links, social links, and copyright
+       ======================================================================== -->
+  <footer class="site-footer" id="footer">
+    <div class="container">
+      
+      <!-- Big Closing Statement -->
+      <div class="footer-hero-block">
+        <span class="section-tag">07 // CONTACT &amp; COLLABORATION</span>
+        <h2 class="footer-hero-heading">Let's build something thoughtful together.</h2>
+      </div>
+
+      <!-- Footer Columns -->
+      <div class="footer-columns-grid">
+        
+        <!-- Summary & Email Column -->
+        <div>
+          <p class="footer-statement">
+            Engineering full-stack products with architectural restraint, robust foundations, and high-fidelity interaction design.
+          </p>
+          <a href="mailto:contact@mesudamin.dev" class="footer-email-link">contact@mesudamin.dev</a>
+        </div>
+
+        <!-- Directory Column -->
+        <div>
+          <span class="label-caps footer-col-title">Directory</span>
+          <div class="footer-directory-grid">
+            <a href="#hero" class="footer-link">Home</a>
+            <a href="#work" class="footer-link">Projects</a>
+            <a href="#about" class="footer-link">About</a>
+            <a href="#skills" class="footer-link">Skills</a>
+            <a href="#process" class="footer-link">Process</a>
+            <a href="#services" class="footer-link">Services</a>
+            <a href="#contact" class="footer-link">Contact</a>
+          </div>
+        </div>
+
+        <!-- Social Presence Column -->
+        <div>
+          <span class="label-caps footer-col-title">Presence</span>
+          <div class="footer-links-col">
+            <a href="https://github.com/mesudamin" target="_blank" rel="noopener noreferrer" class="footer-link">GitHub ↗</a>
+            <a href="https://linkedin.com/in/mesudamin" target="_blank" rel="noopener noreferrer" class="footer-link">LinkedIn ↗</a>
+            <a href="https://x.com/mesudamin" target="_blank" rel="noopener noreferrer" class="footer-link">Twitter / X ↗</a>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Bottom Bar -->
+      <div class="footer-bottom-bar">
+        <p>© 2025 Mesud Amin. Built with semantic HTML &amp; clean CSS.</p>
+        <span class="footer-location-tag">ETHIOPIA / REMOTE</span>
+      </div>
+
+    </div>
+  </footer>
+
+
+  <!-- ========================================================================
+       10. PROJECT ARCHITECTURE QUICKVIEW MODAL
+       👉 Popup modal triggered when user clicks "Live Demo" on a project
+       ======================================================================== -->
+  <div class="project-modal-backdrop" id="project-modal" role="dialog" aria-modal="true" aria-labelledby="modal-project-title">
+    <div class="project-modal-dialog">
+      
+      <div class="modal-header">
+        <div>
+          <span class="label-caps" id="modal-project-category" style="color: var(--accent-green-dark);">Full-Stack App</span>
+          <h3 class="font-display modal-title" id="modal-project-title">Project Title</h3>
+        </div>
+        <button type="button" class="modal-close-btn" id="modal-close-btn" aria-label="Close project modal">
+          <span class="material-symbols-outlined" style="font-size: 20px;">close</span>
+        </button>
+      </div>
+
+      <div class="modal-img-wrap">
+        <img id="modal-project-img" src="" alt="Project screenshot preview" class="modal-img">
+      </div>
+
+      <p id="modal-project-desc" class="modal-desc">
+        Project overview description...
+      </p>
+
+      <div style="margin-bottom: var(--space-md);">
+        <span class="label-caps" style="color: var(--text-muted); display: block; margin-bottom: 0.5rem;">Architecture Highlights</span>
+        <ul id="modal-project-highlights" class="modal-highlights-list"></ul>
+      </div>
+
+      <div style="margin-bottom: var(--space-lg);">
+        <span class="label-caps" style="color: var(--text-muted); display: block; margin-bottom: 0.5rem;">Technologies Deployed</span>
+        <div class="tech-chips" id="modal-project-stack" style="margin-bottom: 0;"></div>
+      </div>
+
+      <div class="modal-actions">
+        <a href="#" id="modal-live-link" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+          <span>Open Live Site</span>
+          <span class="material-symbols-outlined" style="font-size: 16px;">launch</span>
+        </a>
+        <a href="#" id="modal-repo-link" target="_blank" rel="noopener noreferrer" class="btn btn-outline">
+          <span>Inspect Repository</span>
+          <span class="material-symbols-outlined" style="font-size: 16px;">code</span>
+        </a>
+      </div>
+
+    </div>
+  </div>
+
+
+  <!-- ========================================================================
+       11. GLOBAL TOAST NOTIFICATION
+       👉 Brief popup notification when copying email to clipboard
+       ======================================================================== -->
+  <div class="toast-notice" id="global-toast" role="status" aria-live="polite"></div>
+
+</body>
+</html>
